@@ -1,0 +1,73 @@
+.ink {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.ink {
+  opacity: 1;
+}
+.ink.invisible{
+  opacity: 0;
+  -webkit-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+  transform: scale(2.5);
+}
+.ink.animate {
+  -webkit-animation: ripple-effect 0.5s cubic-bezier(.77,.01,1,.99);
+  -o-animation: ripple-effect 0.5s  cubic-bezier(.77,.01,1,.99);
+  animation: ripple-effect 0.5s  cubic-bezier(.77,.01,1,.99);
+}
+
+@keyframes ripple-effect {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+
+  }
+}
+@-webkit-keyframes ripple-effect {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+
+  }
+}
+@-moz-keyframes ripple-effect {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+
+
+  }
+}
+@-ms-keyframes ripple-effect {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+
+  }
+}
+@-o-keyframes ripple-effect {
+  100% {
+    -webkit-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+
+  }
+}
